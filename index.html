@@ -11,7 +11,6 @@
         rel="stylesheet"
     >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/style.css"> 
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -51,12 +50,12 @@
     <main>
         <!------------------------ Герой ------------------------>
 
-        <!-- <section class="hero">
+        <section class="hero">
             <div class="container">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
             </div>
-        </section> -->
+        </section>
 
         <!------------------------ Наши преимущества ------------------------>
 
@@ -65,7 +64,7 @@
                 <h2 class="section__title visually__hidden">Наши преимущества</h2>
                 <ul class="features-list list">
                     <li class="features-list__item">
-                        <div class="container-icon">
+                        <div class="features-list__container">
                             <svg class="features-list__icon" width="70" height="70">
                                 <use href="./images/symbol-defs.svg#icon-Group"></use>
                             </svg>
@@ -74,7 +73,7 @@
                         <p class="features-list__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
                     <li class="features-list__item">
-                        <div class="container-icon">
+                        <div class="features-list__container">
                             <svg class="features-list__icon" width="70" height="70">
                                 <use href="./images/symbol-defs.svg#icon-clock"></use>
                             </svg>
@@ -83,7 +82,7 @@
                         <p class="features-list__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
                     <li class="features-list__item">
-                        <div class="container-icon">
+                        <div class="features-list__container">
                             <svg class="features-list__icon" width="70" height="70">
                                 <use href="./images/symbol-defs.svg#icon-diagram"></use>
                             </svg>
@@ -92,7 +91,7 @@
                         <p class="features-list__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
                     <li class="features-list__item">
-                        <div class="container-icon">
+                        <div class="features-list__container">
                             <svg class="features-list__icon" width="70" height="70">
                                 <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                             </svg>
@@ -107,7 +106,7 @@
 
         <!------------------------ Чем мы занимаемся ------------------------>
 
-        <!-- <section class="section our-work">
+        <section class="section our-work">
             <div class="container">
                 <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="our-work-list list">
@@ -131,10 +130,9 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!------------------------ Наша команда ------------------------>
-<!-- 
         <section class="section team">
             <div class="container">
                 <h2 class="section__title">Наша команда</h2>
@@ -289,8 +287,8 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
-        <!-- <section class="section">
+        </section>
+        <section class="section">
             <div class="container">
                 <h2 class="section__title">Постоянные клиенты</h2>
                 <ul class="client-list list">
@@ -338,7 +336,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
     
     <div class="backdrop is-hidden" data-modal>
@@ -391,68 +389,71 @@
     </div>
     <!------------------------ Футер ------------------------>
 
-    <!-- <footer class="footer">
-        <div class="container address">
-            <div class="address-container">
-                <a href="./index.html" title="Главная страница" class="logo footer__logo">Web<span class="footer__logo--color">Studio</span></a>
-                <address>
-                    <ul class="address-list list">
-                        <li class="address-list-item"><a href="https://goo.gl/maps/1Ti6G86XRcgMfov8A" target="_blank" rel="noopener noindex nofollow"  class="address-map">г. Киев, пр-т Леси Украинки, 26</a></li>
-                        <li class="address-list-item"><a href="mailto:info@devstudio.com" class="address-link">info@devstudio.com</a></li>
-                        <li class="address-list-item"><a href="tel:+380961111111"  class="address-link">+38 096 111 11 11</a></li>
-                    </ul>
-                </address>
-            </div>
-            <div class="join-container">
-                <p class="join-text">присоединяйтесь</p>
-                <ul class="join-soc-list list">
-                    <li class="join-soc-item">
-                        <a href="" class="join-soc-link">
-                            <svg class="join-soc-icon" width="22" height="22">
-                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join-soc-item">
-                        <a href="" class="join-soc-link">
-                            <svg class="join-soc-icon" width="22" height="22">
-                                <use href="./images/symbol-defs.svg#icon-Group1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join-soc-item">
-                        <a href="" class="join-soc-link">
-                            <svg class="join-soc-icon" width="22" height="22">
-                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join-soc-item">
-                        <a href="" class="join-soc-link">
-                            <svg class="join-soc-icon" width="22" height="22">
-                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="distribution-container">
-                <p class="distribution-title">Подпишитесь на рассылку</p>
-                <div class="distribution-form">
-                    <form>
-                        <label for="distribution" class="distribution-label"></label>
-                        <input type="email" class="distribution-input" id="distribution" name="distribution" placeholder="E-mail">
-                        <button type="button" class="distribution-button">Подписаться
-                            <svg class="distribution-icon" width="24" height="24">
-                                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
-                            </svg>
-                        </button>
-                    </form>
-                    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="address">
+                    <div class="address-container">
+                        <a href="./index.html" title="Главная страница" class="logo footer__logo">Web<span class="footer__logo--color">Studio</span></a>
+                        <address>
+                            <ul class="address-list list">
+                                <li class="address-list-item"><a href="https://goo.gl/maps/1Ti6G86XRcgMfov8A" target="_blank" rel="noopener noindex nofollow"  class="address-map">г. Киев, пр-т Леси Украинки, 26</a></li>
+                                <li class="address-list-item"><a href="mailto:info@devstudio.com" class="address-link">info@devstudio.com</a></li>
+                                <li class="address-list-item"><a href="tel:+380961111111"  class="address-link">+38 096 111 11 11</a></li>
+                            </ul>
+                        </address>
+                    </div>
+                    <div class="join-container">
+                        <p class="join-text">присоединяйтесь</p>
+                        <ul class="join-soc-list list">
+                            <li class="join-soc-item">
+                                <a href="" class="join-soc-link">
+                                    <svg class="join-soc-icon" width="22" height="22">
+                                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="join-soc-item">
+                                <a href="" class="join-soc-link">
+                                    <svg class="join-soc-icon" width="22" height="22">
+                                        <use href="./images/symbol-defs.svg#icon-Group1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="join-soc-item">
+                                <a href="" class="join-soc-link">
+                                    <svg class="join-soc-icon" width="22" height="22">
+                                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="join-soc-item">
+                                <a href="" class="join-soc-link">
+                                    <svg class="join-soc-icon" width="22" height="22">
+                                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="distribution-container">
+                    <p class="distribution-title">Подпишитесь на рассылку</p>
+                    <div class="distribution-form">
+                        <form class="from">
+                            <label for="distribution" class="distribution-label"></label>
+                            <input type="email" class="distribution-input" id="distribution" name="distribution" placeholder="E-mail">
+                            <button type="button" class="distribution-button">Подписаться
+                                <svg class="distribution-icon" width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                                </svg>
+                            </button>
+                        </form>    
+                    </div>
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <script src="./js/modal.js"></script>
 </body>
 

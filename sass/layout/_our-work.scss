@@ -1,19 +1,22 @@
 .our-work {
     padding-top: 0px;
-    &-list {
+    @media screen and (max-width: 1199.5px) {
+        display: none;
+    }
+    .our-work-list {
         display: flex;
     }
 
-    &-item:not(:last-child) {
+    .our-work-item:not(:last-child) {
         margin-right: 30px;
     }
 
-    &-box {
+    .our-work-box {
         position: relative;
         overflow: hidden;
     }
 
-    &-text {
+    .our-work-text {
         background-color: rgba(47, 48, 58, 0.8);
         color: var(--white-color);
         font-weight: 700;
