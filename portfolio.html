@@ -19,9 +19,14 @@
 
 <header class="header">
   <div class="container header__container">
+    <a href="./index.html" title="Главная страница" class="logo logo__header">Web<span
+        class="logo__header--color">Studio</span></a>
+    <button type="button" class="menu-open">
+      <svg class="menu-open__icon" width="40" height="40">
+        <use href="./images/menu_open.svg#icon-menu_open">qewrt</use>
+      </svg>
+    </button>
     <nav class="main-nav main-nav__header">
-      <a href="./index.html" title="Главная страница" class="logo logo__header">Web<span
-          class="logo__header--color">Studio</span></a>
       <ul class="site-nav list">
         <li class="site-nav__item"><a href="./index.html " title="Студия"
             class="site-nav__link ">Студия</a></li>
@@ -33,7 +38,7 @@
     <ul class="auth-nav list">
       <li class="auth-nav__item">
         <a href="mailto:info@devstudio.com" class="auth-nav__link">
-          <svg class="auth-nav__icon" width="16" height="12">
+          <svg class="auth-nav__icon" width="14" height="10">
             <use href="./images/symbol-defs.svg#icon-envelope"></use>
           </svg>
           info@devstudio.com
@@ -41,12 +46,61 @@
       </li>
       <li class="auth-nav__item">
         <a href="tel:+380961111111" class="auth-nav__link">
-          <svg class="auth-nav__icon" width="10" height="16">
+          <svg class="auth-nav__icon auth-nav__icon--size" width="10" height="12">
             <use href="./images/symbol-defs.svg#icon-smartphone"></use>
           </svg>
           +38 096 111 11 11</a>
       </li>
     </ul>
+  </div>
+  <div class="mob-menu is-hidden">
+    <div class="container">
+      <button type="button" class="menu-close">
+        <svg class="menu-close__icon" width="40" height="40">
+          <use href="./images/menu_close.svg#icon-menu_close">qewrt</use>
+        </svg>
+      </button>
+      <div class="mob-menu__top">
+        <ul class="mob-site-nav list">
+          <li class="mob-site-nav__item">
+            <a href="./index.html " title="Студия" class="mob-site-nav__link">Студия</a>
+          </li>
+          <li class="mob-site-nav__item">
+            <a href="./portfolio.html" title="Портфолио" class="mob-site-nav__link mob-site-nav__link--current">Портфолио</a>
+          </li>
+          <li class="mob-site-nav__item">
+            <a href="" class="mob-site-nav__link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mob-menu__bottom">
+        <ul class="mob-auth-nav list">
+          <li class="tel-auth-nav__item">
+            <a href="tel:+380961111111" class="tel-auth-nav__link ">
+              +38 096 111 11 11</a>
+          </li>
+          <li class="mail-auth-nav__item">
+            <a href="mailto:info@devstudio.com" class="mail-auth-nav__link">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="mob_soc-list">
+          <li class="soc-list__item list">
+            <a class="soc-list__liink" target="blank" href="">Instagram</a>
+          </li>
+          <li class="soc-list__item list">
+            <a class="soc-list__liink" target="blank" href="">Twitter</a>
+          </li>
+          <li class="soc-list__item list">
+            <a class="soc-list__liink" target="blank" href="">Facebook</a>
+          </li>
+          <li class="soc-list__item list">
+            <a class="soc-list__liink" target="blank" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -58,7 +112,7 @@
           <ul class="filter-buttons list">
             <li class="filter-item"><button type="button" class="button__portfolio">Все</button></li>
             <li class="filter-item"><button type="button" class="button__portfolio">Веб-сайты</button></li>
-            <li class="filter-item"><button type="button" class="button__portfolio">Приложения</button></li>
+            <li class="filter-item"><button type="button" class="button__portfolio">Приложения</button></li> 
             <li class="filter-item"><button type="button" class="button__portfolio">Дизайн</button></li>
             <li class="filter-item"><button type="button" class="button__portfolio">Маркетинг</button></li>
           </ul>
@@ -66,7 +120,9 @@
             <li class="portfolio-item">
               <a href="./portfolio.html" class="portfolio-link">
                 <div class="description-wrap">
-                  <img src="./images/technoquack.jpg" alt="web-site" width="370"  class="portfolio-img"/>
+                  <picture>
+                    <img srcset="./images/technoquack.jpg x1, ./images/portfolio-1-2x.jpg 2x" src="./images/technoquack.jpg"alt="web-site" width="370" class="portfolio-img" />
+                  </picture>
                   <p class="description-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
@@ -74,14 +130,16 @@
                 </div>
                 <div class="portfolio-container">
                   <h2 class="portfolio-title">Технокряк</h2>
-                  <p class="portfolio-text">Веб-сайт</p>
+                  <p class="portfolio-text portfolio-text--problem">Веб-сайт</p>
                 </div>
               </a>
             </li>
             <li class="portfolio-item">
               <a href="./portfolio.html" class="portfolio-link">
                 <div class="description-wrap">
-                  <img src="./images/new-orlean.jpg" alt="design" width="370"  class="portfolio-img"/>
+                  <picture>
+                    <img srcset="./images/new-orlean.jpg x1, ./images/portfolio-2-2x.jpg 2x" src="./images/new-orlean.jpg" alt="design" width="370"  class="portfolio-img" />
+                  </picture>
                   <p class="description-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                   позволит посетителю получить
                   исчерпывающие сведения о компании или частном лице.
@@ -96,7 +154,9 @@
             <li class="portfolio-item">
               <a href="./portfolio.html" class="portfolio-link">
                 <div class="description-wrap">
-                  <img src="./images/seafood.jpg" alt="program" width="370"  class="portfolio-img"/>
+                  <picture>
+                    <img srcset="./images/seafood.jpg x1, ./images/portfolio-3-2x.jpg 2x" src="./images/seafood.jpg" alt="program" width="370"  class="portfolio-img" />
+                  </picture>
                   <p class="description-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                   позволит посетителю получить
                   исчерпывающие сведения о компании или частном лице.
@@ -111,7 +171,9 @@
             <li class="portfolio-item">
               <a href="./portfolio.html" class="portfolio-link">
                 <div class="description-wrap">
-                  <img src="./images/prime.jpg" alt="marketing" width="370"  class="portfolio-img"/>
+                  <picture>
+                    <img srcset="./images/prime.jpg x1, ./images/portfolio-4-2x.jpg 2x" src="./images/prime.jpg" alt="marketing" width="370"  class="portfolio-img" />
+                  </picture>
                   <p class="description-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
@@ -126,7 +188,9 @@
             <li class="portfolio-item">
               <a href="./portfolio.html" class="portfolio-link">
                 <div class="description-wrap">
-                  <img src="./images/project-boxes.jpg" alt="program" width="370"  class="portfolio-img"/>
+                  <picture>
+                    <img srcset="./images/project-boxes.jpg x1, ./images/portfolio-5-2x.jpg 2x" src="./images/project-boxes.jpg" alt="program" width="370"  class="portfolio-img" />
+                  </picture>
                   <p class="description-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
@@ -141,7 +205,9 @@
             <li class="portfolio-item">
               <a href="./portfolio.html" class="portfolio-link">
                 <div class="description-wrap">
-                  <img src="./images/inspiration-has-no-borders.jpg" alt="web-site" width="370"  class="portfolio-img"/>
+                  <picture>
+                    <img srcset="./images/inspiration-has-no-borders.jpg x1, ./images/portfolio-6-2x.jpg 2x" src="./images/inspiration-has-no-borders.jpg" alt="web-site" width="370"  class="portfolio-img" />
+                  </picture>
                   <p class="description-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
@@ -156,7 +222,9 @@
             <li class="portfolio-item">
               <a href="./portfolio.html" class="portfolio-link">
                 <div class="description-wrap">
-                  <img src="./images/limited-edition.jpg" alt="design" width="370"  class="portfolio-img"/>
+                  <picture>
+                    <img srcset="./images/limited-edition.jpg x1, ./images/portfolio-7-2x.jpg 2x" src="./images/limited-edition.jpg" alt="design" width="370"  class="portfolio-img" />
+                  </picture>
                   <p class="description-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
@@ -170,7 +238,9 @@
             <li class="portfolio-item">
               <a href="./portfolio.html" class="portfolio-link">
                 <div class="description-wrap">
-                  <img src="./images/lab-project.jpg" alt="marketing" width="370"  class="portfolio-img"/>
+                  <picture>
+                    <img srcset="./images/lab-project.jpg x1, ./images/portfolio-8-2x.jpg 2x" src="./images/lab-project.jpg" alt="marketing" width="370"  class="portfolio-img" />
+                  </picture>
                   <p class="description-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
@@ -185,7 +255,9 @@
             <li class="portfolio-item">
               <a href="./portfolio.html" class="portfolio-link">
                 <div class="description-wrap">
-                  <img src="./images/growing-business.jpg" alt="program" width="370"  class="portfolio-img"/>
+                  <picture>
+                    <img srcset="./images/growing-business.jpg x1, ./images/portfolio-9-2x.jpg 2x" src="./images/growing-business.jpg" alt="program" width="370"  class="portfolio-img" />
+                  </picture>
                   <p class="description-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
@@ -205,53 +277,74 @@
     <!------------------------ Футер ------------------------>
 
     <footer class="footer">
-      <div class="container address">
-        <div class="address-container">
-          <a href="./index.html" title="Главная страница" class="logo footer__logo">Web<span class="footer__logo--color">Studio</span></a>
-          <address>
-            <ul class="address-list list">
-              <li class="address-list-item"><a href="https://goo.gl/maps/1Ti6G86XRcgMfov8A" target="_blank"
-                  rel="noopener noindex nofollow" class="address-map">г. Киев, пр-т Леси Украинки, 26</a></li>
-              <li class="address-list-item"><a href="mailto:info@devstudio.com" class="address-link">info@devstudio.com</a>
-              </li>
-              <li class="address-list-item"><a href="tel:+380961111111" class="address-link">+38 096 111 11 11</a></li>
-            </ul>
-          </address>
-        </div>
-        <div class="join-container">
-          <p class="join-text">присоединяйтесь</p>
-          <ul class="join-soc-list list">
-            <li class="join-soc-item">
-              <a href="" class="join-soc-link">
-                <svg class="join-soc-icon" width="22" height="22">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-soc-item">
-              <a href="" class="join-soc-link">
-                <svg class="join-soc-icon" width="22" height="22">
-                  <use href="./images/symbol-defs.svg#icon-Group1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-soc-item">
-              <a href="" class="join-soc-link">
-                <svg class="join-soc-icon" width="22" height="22">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-soc-item">
-              <a href="" class="join-soc-link">
-                <svg class="join-soc-icon" width="22" height="22">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+      <div class="container">
+        <div class="footer__container">
+          <div class="address">
+            <div class="address-container">
+              <a href="./index.html" title="Главная страница" class="logo footer__logo">Web<span
+                  class="footer__logo--color">Studio</span></a>
+              <address>
+                <ul class="address-list list">
+                  <li class="address-list-item"><a href="https://goo.gl/maps/1Ti6G86XRcgMfov8A" target="_blank"
+                      rel="noopener noindex nofollow" class="address-map">г. Киев, пр-т Леси Украинки, 26</a></li>
+                  <li class="address-list-item"><a href="mailto:info@devstudio.com"
+                      class="address-link">info@devstudio.com</a></li>
+                  <li class="address-list-item"><a href="tel:+380961111111" class="address-link">+38 096 111 11 11</a></li>
+                </ul>
+              </address>
+            </div>
+            <div class="join-container">
+              <p class="join-text">присоединяйтесь</p>
+              <ul class="join-soc-list list">
+                <li class="join-soc-item">
+                  <a href="" class="join-soc-link">
+                    <svg class="join-soc-icon" width="22" height="22">
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="join-soc-item">
+                  <a href="" class="join-soc-link">
+                    <svg class="join-soc-icon" width="22" height="22">
+                      <use href="./images/symbol-defs.svg#icon-Group1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="join-soc-item">
+                  <a href="" class="join-soc-link">
+                    <svg class="join-soc-icon" width="22" height="22">
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="join-soc-item">
+                  <a href="" class="join-soc-link">
+                    <svg class="join-soc-icon" width="22" height="22">
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="distribution-container">
+            <p class="distribution-title">Подпишитесь на рассылку</p>
+            <div class="distribution-form">
+              <form class="from">
+                <label for="distribution" class="distribution-label"></label>
+                <input type="email" class="distribution-input" id="distribution" name="distribution" placeholder="E-mail">
+                <button type="button" class="distribution-button">Подписаться
+                  <svg class="distribution-icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

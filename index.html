@@ -18,10 +18,15 @@
 
     <!------------------------ Шапка ------------------------>
 
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__container">
+            <a href="./index.html" title="Главная страница" class="logo logo__header">Web<span class="logo__header--color">Studio</span></a>
+            <button type="button" class="menu-open">
+                <svg class="menu-open__icon" width="40" height="40">
+                    <use href="./images/menu_open.svg#icon-menu_open">qewrt</use>
+                </svg>
+            </button>
             <nav class="main-nav main-nav__header">
-                <a href="./index.html" title="Главная страница" class="logo logo__header">Web<span class="logo__header--color">Studio</span></a>
                 <ul class="site-nav list">
                     <li class="site-nav__item"><a href="./index.html " title="Студия" class="site-nav__link site-nav__link--current">Студия</a></li>
                     <li class="site-nav__item"><a href="./portfolio.html" title="Портфолио" class="site-nav__link">Портфолио</a></li>
@@ -31,7 +36,7 @@
             <ul class="auth-nav list">
                 <li class="auth-nav__item">
                     <a href="mailto:info@devstudio.com" class="auth-nav__link">
-                        <svg class="auth-nav__icon" width="16" height="12">
+                        <svg class="auth-nav__icon" width="14" height="10">
                             <use href="./images/symbol-defs.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com
@@ -39,13 +44,62 @@
                 </li>
                 <li class="auth-nav__item">
                     <a href="tel:+380961111111" class="auth-nav__link">
-                        <svg class="auth-nav__icon" width="10" height="16">
+                        <svg class="auth-nav__icon auth-nav__icon--size" width="10" height="12">
                             <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                         </svg>
                     +38 096 111 11 11</a></li>
             </ul>
         </div>
-    </header> -->
+        <div class="mob-menu is-hidden">
+            <div class="container">
+                <button type="button" class="menu-close">
+                    <svg class="menu-close__icon" width="40" height="40">
+                        <use href="./images/menu_close.svg#icon-menu_close">qewrt</use>
+                    </svg>
+                </button>
+                <div class="mob-menu__top">
+                    <ul class="mob-site-nav list">
+                        <li class="mob-site-nav__item">
+                            <a href="./index.html " title="Студия"class="mob-site-nav__link mob-site-nav__link--current">Студия</a>
+                        </li>
+                        <li class="mob-site-nav__item">
+                            <a href="./portfolio.html" title="Портфолио" class="mob-site-nav__link">Портфолио</a>
+                        </li>
+                        <li class="mob-site-nav__item">
+                            <a href="" class="mob-site-nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mob-menu__bottom">
+                    <ul class="mob-auth-nav list">
+                        <li class="tel-auth-nav__item">
+                            <a href="tel:+380961111111" class="tel-auth-nav__link ">
+                                +38 096 111 11 11</a>
+                        </li>
+                        <li class="mail-auth-nav__item">
+                            <a href="mailto:info@devstudio.com" class="mail-auth-nav__link">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="mob_soc-list">
+                        <li class="soc-list__item list">
+                            <a class="soc-list__liink" target="blank" href="">Instagram</a>
+                        </li>
+                        <li class="soc-list__item list">
+                            <a class="soc-list__liink" target="blank" href="">Twitter</a>
+                        </li>
+                        <li class="soc-list__item list">
+                            <a class="soc-list__liink" target="blank" href="">Facebook</a>
+                        </li>
+                        <li class="soc-list__item list">
+                            <a class="soc-list__liink" target="blank" href="">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <main>
         <!------------------------ Герой ------------------------>
@@ -112,19 +166,27 @@
                 <ul class="our-work-list list">
                     <li class="our-work-item">
                         <div class="our-work-box">
-                            <img src="./images/box_1_p.jpg" alt="Написание кода сайта" width="370"/>
+                            <picture>
+                                <source srcset="./images/box_1_p.jpg x1, ./images/box-1-2x.jpg 2x" media="min-width:1200px" />
+                                <img srcset="./images/box_1_p.jpg x1, ./images/box-1-2x.jpg 2x" src="./images/box_1_p.jpg" alt="Написание кода сайта" width="370"/>
+                            </picture>
                             <p class="our-work-text">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="our-work-item">
                         <div class="our-work-box">
-                            <img src="./images/box_2_p.jpg" alt="Адаптация сайта под мобильные устройства" width="370"/>
+                            <picture>
+                                <img srcset="./images/box_2_p.jpg x1, ./images/box-2-2x.jpg 2x" src="./images/box_2_p.jpg" alt="Адаптация сайта под мобильные устройства" width="370" />
+                            </picture>
+                            
                             <p class="our-work-text">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="our-work-item">
                         <div class="our-work-box">
-                            <img src="./images/box_3_p.jpg" alt="Стилизация" width="370"/>
+                            <picture>
+                                <img srcset="./images/box_3_p.jpg x1, ./images/box-3-2x.jpg 2x" src="./images/box_3_p.jpg" alt="Написание кода сайта" width="370" />
+                            </picture>
                             <p class="our-work-text">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -138,7 +200,9 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-list-item">
-                        <img src="./images/Igor_Demyanenko_p.jpg" alt="Игорь Демьяненко" width="270" class="team-img"/>
+                        <picture>
+                            <img srcset="./images/Igor_Demyanenko_p.jpg x1, ./images/Product-Designer-2x.jpg 2x" src="./images/Igor_Demyanenko_p.jpg" alt="Игорь Демьяненко" width="270" class="team-img"/>
+                        </picture>
                         <div class="container-team">
                             <h3 class="team-title">Игорь Демьяненко</h3>
                             <p class="team-text">Product Designer</p>
@@ -175,7 +239,9 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img src="./images/Olga_Repina_p.jpg" alt="Ольга Репина" width="270" class="team-img"/>
+                        <picture>
+                            <img srcset="./images/Olga_Repina_p.jpg x1, ./images/Frontend-Developer-2x.jpg 2x" src="./images/Olga_Repina_p.jpg" alt="Ольга Репина" width="270" class="team-img"/>
+                        </picture>
                         <div class="container-team">
                             <h3 class="team-title">Ольга Репина</h3>
                             <p class="team-text">Frontend Developer</p>
@@ -212,7 +278,10 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img src="./images/Nikolai_Tarasov_p.jpg" alt="Николай Тарасов" width="270" class="team-img"/>
+                        <picture>
+                            <img srcset="./images/Nikolai_Tarasov_p.jpg x1, ./images/Marketing-2x.jpg 2x" src="./images/Nikolai_Tarasov_p.jpg" alt="Николай Тарасов" width="270" class="team-img"/>
+                        </picture>
+                        
                         <div class="container-team">
                             <h3 class="team-title">Николай Тарасов</h3>
                             <p class="team-text">Marketing</p>
@@ -249,7 +318,10 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img src="./images/Mikhail_Ermakov_p.jpg" alt="Михаил Ермаков" width="270" class="team-img"/>
+                        <picture>
+                            <img srcset="./images/Mikhail_Ermakov_p.jpg x1, ./images/UI-Designer-2x.jpg 2x" src="./images/Mikhail_Ermakov_p.jpg" alt="Михаил Ермаков" width="270" class="team-img"/>
+                        </picture>
+                        
                         <div class="container-team">
                             <h3 class="team-title">Михаил Ермаков</h3>
                             <p class="team-text">UI Designer</p>
@@ -381,7 +453,7 @@
                 </div>
                 <div class="check-field">
                     <input type="checkbox" class="input-check  visually__hidden" id="input-check" name="policy" value="policy">
-                    <label for="input-check" class="check-text">Соглашаюсь с рассылкой и принимаю <a href="" class="check-link">Условия договора</a> </label>
+                    <label for="input-check" class="check-text">Соглашаюсь с рассылкой и принимаю <a href="" class="check-link"> Условия договора</a> </label>
                 </div>
                 <button type="submit" class="input-button">Отправить</button>
             </form>
@@ -455,6 +527,7 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
