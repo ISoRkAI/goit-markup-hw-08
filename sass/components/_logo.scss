@@ -6,25 +6,35 @@
     font-size: 24px;
     line-height: 1.7;
     text-decoration: none;
-     @media screen and (min-width: 768px) {
-        padding: 20px 0px;
-        margin-right: 88px;
-    }
     @media screen and (min-width: 1200px){
         font-size: 26px;
         line-height: 1.19;
-        padding: 26px 0px;
+        // padding: 26px 0px;
     }
-}
-
-.logo__header--color {
-    color: var(--black-color);
+    
 }
 
 .footer__logo {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+        justify-content: start;
+    }
+
     &--color {
-            color: var(--white-color);
-        }
+        color: var(--white-color);
+    }
 }
+.logo__header{
+    @media screen and (min-width: 768px) {
+        margin-right: 88px;
+    }
+    
+}
+.logo__header--color {
+    color: var(--black-color);
+}
+
+
 

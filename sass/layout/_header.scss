@@ -1,15 +1,19 @@
 .header {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #d1b5b5;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ECECEC;
     .header__container {
         display: flex;
         align-items: center;
         
     }
     @media screen and (min-width: 768px) {
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding-top: 19px;
+        padding-bottom: 19px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 }
 

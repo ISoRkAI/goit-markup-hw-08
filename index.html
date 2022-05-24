@@ -16,14 +16,14 @@
 
 <body>
 
-    <!------------------------ Шапка ------------------------>
+    <!-- Шапка -->
 
     <header class="header">
         <div class="container header__container">
             <a href="./index.html" title="Главная страница" class="logo logo__header">Web<span class="logo__header--color">Studio</span></a>
             <button type="button" class="menu-open">
                 <svg class="menu-open__icon" width="40" height="40">
-                    <use href="./images/menu_open.svg#icon-menu_open">qewrt</use>
+                    <use href="./images/menu_open.svg#icon-menu_open"></use>
                 </svg>
             </button>
             <nav class="main-nav main-nav__header">
@@ -54,13 +54,13 @@
             <div class="container">
                 <button type="button" class="menu-close">
                     <svg class="menu-close__icon" width="40" height="40">
-                        <use href="./images/menu_close.svg#icon-menu_close">qewrt</use>
+                        <use href="./images/menu_close.svg#icon-menu_close"></use>
                     </svg>
                 </button>
                 <div class="mob-menu__top">
                     <ul class="mob-site-nav list">
                         <li class="mob-site-nav__item">
-                            <a href="./index.html " title="Студия"class="mob-site-nav__link mob-site-nav__link--current">Студия</a>
+                            <a href="./index.html " title="Студия" class="mob-site-nav__link mob-site-nav__link--current">Студия</a>
                         </li>
                         <li class="mob-site-nav__item">
                             <a href="./portfolio.html" title="Портфолио" class="mob-site-nav__link">Портфолио</a>
@@ -102,7 +102,7 @@
     </header>
 
     <main>
-        <!------------------------ Герой ------------------------>
+        <!-- Герой -->
 
         <section class="hero">
             <div class="container">
@@ -111,7 +111,7 @@
             </div>
         </section>
 
-        <!------------------------ Наши преимущества ------------------------>
+         <!-- Наши преимущества  -->
 
         <section class="section">
             <div class="container">
@@ -158,7 +158,7 @@
 
         </section>
 
-        <!------------------------ Чем мы занимаемся ------------------------>
+        <!-- Чем мы занимаемся -->
 
         <section class="section our-work">
             <div class="container">
@@ -167,8 +167,13 @@
                     <li class="our-work-item">
                         <div class="our-work-box">
                             <picture>
-                                <source srcset="./images/box_1_p.jpg x1, ./images/box-1-2x.jpg 2x" media="min-width:1200px" />
-                                <img srcset="./images/box_1_p.jpg x1, ./images/box-1-2x.jpg 2x" src="./images/box_1_p.jpg" alt="Написание кода сайта" width="370"/>
+                                <img 
+                                    srcset="./images/box_1_1x.jpg 1x, 
+                                    ./images/box-1-2x.jpg 2x" 
+                                    src="./images/box_1_1x.jpg" 
+                                    alt="Написание кода сайта" 
+                                    width="370"
+                                />
                             </picture>
                             <p class="our-work-text">Десктопные приложения</p>
                         </div>
@@ -176,7 +181,13 @@
                     <li class="our-work-item">
                         <div class="our-work-box">
                             <picture>
-                                <img srcset="./images/box_2_p.jpg x1, ./images/box-2-2x.jpg 2x" src="./images/box_2_p.jpg" alt="Адаптация сайта под мобильные устройства" width="370" />
+                                <img 
+                                    srcset="./images/box_2_p.jpg 1x, 
+                                    ./images/box-2-2x.jpg 2x" 
+                                    src="./images/box_2_p.jpg" 
+                                    alt="Адаптация сайта под мобильные устройства" 
+                                    width="370" 
+                                />
                             </picture>
                             
                             <p class="our-work-text">Мобильные приложения</p>
@@ -185,7 +196,13 @@
                     <li class="our-work-item">
                         <div class="our-work-box">
                             <picture>
-                                <img srcset="./images/box_3_p.jpg x1, ./images/box-3-2x.jpg 2x" src="./images/box_3_p.jpg" alt="Написание кода сайта" width="370" />
+                                <img 
+                                    srcset="./images/box_3_p.jpg 1x, 
+                                    ./images/box-3-2x.jpg 2x" 
+                                    src="./images/box_3_p.jpg" 
+                                    alt="Написание кода сайта" 
+                                    width="370" 
+                                    />
                             </picture>
                             <p class="our-work-text">Дизайнерские решения</p>
                         </div>
@@ -194,14 +211,29 @@
             </div>
         </section>
 
-        <!------------------------ Наша команда ------------------------>
+        <!-- Наша команда -->
         <section class="section team">
             <div class="container">
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-list-item">
                         <picture>
-                            <img srcset="./images/Igor_Demyanenko_p.jpg x1, ./images/Product-Designer-2x.jpg 2x" src="./images/Igor_Demyanenko_p.jpg" alt="Игорь Демьяненко" width="270" class="team-img"/>
+                            <source 
+                                srcset="./images/Igor_Demyanenko_p.jpg 1x, 
+                                ./images/Product-Designer-2x.jpg 2x" 
+                                media="(min-width:1200px)"
+                                >
+                            <source 
+                                srcset="./images/Product-Designer-tabl.jpg 1x, 
+                                ./images/Product-Designer-tabl-2x.jpg 2x" 
+                                media="(min-width:768px)"
+                            >
+                            <source 
+                                srcset="./images/Product-Designer-mob.jpg 1x, 
+                                images/Product-Designer-mob-2x.jpg 2x" 
+                                media="(min-width:480px)"
+                            >
+                            <img src="./images/Igor_Demyanenko_p.jpg" alt="Игорь Демьяненко" width="270" class="team-img"/>
                         </picture>
                         <div class="container-team">
                             <h3 class="team-title">Игорь Демьяненко</h3>
@@ -240,7 +272,22 @@
                     </li>
                     <li class="team-list-item">
                         <picture>
-                            <img srcset="./images/Olga_Repina_p.jpg x1, ./images/Frontend-Developer-2x.jpg 2x" src="./images/Olga_Repina_p.jpg" alt="Ольга Репина" width="270" class="team-img"/>
+                            <source 
+                                srcset="./images/Olga_Repina_p.jpg 1x, 
+                                ./images/Frontend-Developer-2x.jpg 2x" 
+                                media="(min-width:1200px)"
+                                >
+                            <source 
+                                srcset="./images/Frontend-Developer-tabl.jpg 1x, 
+                                ./images/Frontend-Developer-tabl-2x.jpg 2x" 
+                                media="(min-width:768px)"
+                            >
+                            <source 
+                                srcset="./images/Frontend-Developer-mob.jpg 1x, 
+                                ./images/Frontend-Developer-mob-2x.jpg 2x" 
+                                media="(min-width:320px)"
+                            >
+                            <img src="./images/Olga_Repina_p.jpg" alt="Ольга Репина" width="270" class="team-img"/>
                         </picture>
                         <div class="container-team">
                             <h3 class="team-title">Ольга Репина</h3>
@@ -279,9 +326,23 @@
                     </li>
                     <li class="team-list-item">
                         <picture>
-                            <img srcset="./images/Nikolai_Tarasov_p.jpg x1, ./images/Marketing-2x.jpg 2x" src="./images/Nikolai_Tarasov_p.jpg" alt="Николай Тарасов" width="270" class="team-img"/>
+                            <source 
+                                srcset="./images/Nikolai_Tarasov_p.jpg 1x, 
+                                ./images/Marketing-2x.jpg 2x" 
+                                media="(min-width:1200px)"
+                                >
+                            <source 
+                                srcset="./images/Marketing-tabl.jpg 1x, 
+                                ./images/Marketing-tabl-2x.jpg 2x" 
+                                media="(min-width:768px)"
+                            >
+                            <source 
+                                srcset="./images/Marketing-mob.jpg 1x, 
+                                ./images/Marketing-mob-2x.jpg 2x" 
+                                media="(min-width:320px)"
+                            >
+                            <img src="./images/Nikolai_Tarasov_p.jpg" alt="Николай Тарасов" width="270" class="team-img"/>
                         </picture>
-                        
                         <div class="container-team">
                             <h3 class="team-title">Николай Тарасов</h3>
                             <p class="team-text">Marketing</p>
@@ -319,9 +380,23 @@
                     </li>
                     <li class="team-list-item">
                         <picture>
-                            <img srcset="./images/Mikhail_Ermakov_p.jpg x1, ./images/UI-Designer-2x.jpg 2x" src="./images/Mikhail_Ermakov_p.jpg" alt="Михаил Ермаков" width="270" class="team-img"/>
+                            <source 
+                                srcset="./images/Mikhail_Ermakov_p.jpg 1x, 
+                                ./images/UI-Designer-2x.jpg 2x" 
+                                media="(min-width:1200px)"
+                                >
+                            <source 
+                                srcset="./images/UI-Designer-tabl.jpg 1x, 
+                                ./images/UI-Designer-tabl-2x.jpg 2x" 
+                                media="(min-width:768px)"
+                            >
+                            <source 
+                                srcset="./images/UI-Designer-mob.jpg 1x, 
+                                ./images/UI-Designer-mob-2x.jpg 2x" 
+                                media="(min-width:320px)"
+                            >
+                            <img src="./images/Mikhail_Ermakov_p.jpg" alt="Михаил Ермаков" width="270" class="team-img"/>
                         </picture>
-                        
                         <div class="container-team">
                             <h3 class="team-title">Михаил Ермаков</h3>
                             <p class="team-text">UI Designer</p>
@@ -459,7 +534,7 @@
             </form>
         </div>
     </div>
-    <!------------------------ Футер ------------------------>
+    <!-- Футер -->
 
     <footer class="footer">
         <div class="container">
