@@ -486,11 +486,11 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
-    font-size: 26px;
-    line-height: 1.62;
-    max-width: 360px;
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
   }
 }
 .hero__button {
@@ -1027,6 +1027,9 @@ img {
   }
 }
 
+.address {
+  margin-bottom: 60px;
+}
 @media screen and (min-width: 768px) {
   .address {
     align-items: baseline;
@@ -1038,6 +1041,7 @@ img {
 @media screen and (min-width: 1200px) {
   .address {
     justify-content: flex-start;
+    margin-bottom: 0px;
   }
 }
 
@@ -1051,12 +1055,7 @@ img {
 }
 
 .join-container {
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 768px) {
-  .join-container {
-    margin-bottom: 0px;
-  }
+  margin-bottom: 0px;
 }
 
 .join-soc-list {
@@ -1114,7 +1113,6 @@ img {
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
   outline: none;
-  margin-right: 12px;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
@@ -1129,6 +1127,8 @@ img {
   .distribution-input {
     display: inline-flex;
     width: 358px;
+    margin: 0px;
+    margin-right: 12px;
   }
 }
 

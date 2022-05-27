@@ -61,6 +61,7 @@
     }
 }
 .address{
+    margin-bottom: 60px;
     @media screen and (min-width: 768px) {
         align-items: baseline;
         margin-bottom: 60px;
@@ -69,6 +70,7 @@
     }
     @media screen and (min-width: 1200px) {
         justify-content: flex-start;
+        margin-bottom: 0px;
     }
 }
 
@@ -85,10 +87,7 @@
 }
 
 .join-container{
-    margin-bottom: 60px;
-    @media screen and (min-width: 768px) {
-        margin-bottom: 0px;
-    }
+    margin-bottom: 0px;
 }
 
 .join-soc-list {
@@ -145,7 +144,6 @@
     color: rgba(255, 255, 255, 0.6);
     background-color: transparent;
     outline: none;
-    margin-right: 12px;
     margin-bottom: 20px;
     @media screen and (min-width: 768px) {
         display: block;
@@ -156,6 +154,8 @@
     @media screen and (min-width: 1200px) {
         display: inline-flex;
         width: 358px;
+        margin: 0px;
+        margin-right: 12px;
     }
 }
 
